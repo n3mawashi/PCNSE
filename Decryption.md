@@ -25,6 +25,7 @@
       * Device has the certificate and private keys. They maintain a list of trusted CA's, and can be updated by admins or by system updates.
     * Certificate chain starts with the device and ends with the Root CA. As long as there is a Root CA in the chain, the certificate can be checked as valid (or revoked).
     * Certificate Hashes can be validated to confirm that it hasn't been intercepted and altered
+* The validity date on PA generated certificate is taken from the server certificate.
 * Firewalls can use for many purposes:
     * SSL/TLS
     * MGT Interface User Auth
