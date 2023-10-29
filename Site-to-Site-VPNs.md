@@ -116,7 +116,7 @@
     * `show VPN ike-sa gateway (name)` to check status
     * IPSec Phase 2 test: `test vpn ipsec-sa tunnel (name)`
     * `show VPN ipsec-sa tunnel (name)` to check status
-    * To validate traffic flow, use the `show vpn flow` command
+    * To validate traffic flow or check decap/encap counters, use the `show vpn flow name <tunnel name>` command
 * Troubleshooting from the responder is easier to track down issues
   * VPN error messages can include:
     * Wrong IP - Incorrect IP in P1 config or cannot communicate/route to the IP
