@@ -117,3 +117,5 @@
     * Also can be done by setting a log filter for Flags, Has, SSL Proxy.
 * Troubleshooting SSL sessions
     * Using the log filter to search for 'session end reason' 'equal' 'decrypt error', you can see what sessions are not being decrypted.
+* Troubleshooting SSL CLI commands 
+    * show how many existing SSL decryption sessions are traversing the firewall "debug dataplane pool statistics | match proxy"
