@@ -76,3 +76,10 @@
     * Ability to have seperate virtual firewalls in a single physical chassis
     * Each system has its own zones, policies, administrators
     * Supported on the 3k/5k/7k models
+
+* Machine Learning-Powered Next-Generation Firewalls
+   Palo Alto Networks Machine Learning (ML)–powered Next-Generation Firewalls (NGFWs) enable you
+   to adopt best practices by using application, user, and content-based policies to minimize
+   opportunities for attack. They are available as physical appliances, virtualized appliances, and
+   cloud-delivered services–all of which can be managed with Panorama to ensure a consistent
+   security stance.
