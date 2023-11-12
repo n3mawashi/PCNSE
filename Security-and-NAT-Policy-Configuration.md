@@ -55,6 +55,28 @@ host sweeps:
 range of port numbers on a host, with the goal of locating an active port to exploit in an
 attack. Zone Protection profiles defend against TCP and UDP port scans.
    * Host sweeps examine multiple hosts to determine if a specific port is open and vulnerable
+* Packet-Based Attack Protection
+  * Packet-based attacks take many forms. Zone Protection profiles check IP, TCP, ICMP, IPv6, and
+   ICMPv6 packet headers and protect a zone by:
+  * Dropping packets with undesirable characteristics.
+  * Stripping undesirable options from packets before admitting them to the zone.
+   Select the drop characteristics for each packet type when you Configure Packet Based Attack
+   Protection. The best practices for each IP protocol are:
+      *  IP Drop—Drop Unknown and Malformed packets. Also drop Strict Source Routing and
+Loose Source Routing because allowing these options allows adversaries to bypass Security
+policy rules that use the Destination IP address as the matching criteria. For internal zones
+only, check Spoofed IP Address so only traffic with a source address that matches the
+firewall routing table can access the zone.
+      * TCP Drop—Retain the default TCP SYN with Data and TCP SYN-ACK with Data drops, drop
+Mismatched overlapping TCP segment and Split Handshake packets, and strip the TCP
+Timestamp from packets.
+      * ICMP Drop—There are no standard best practice settings because dropping ICMP packets
+depends on how you use ICMP (or if you use ICMP). For example, if you want to block ping
+activity, you can block ICMP Ping ID 0.
+      * IPv6 Drop—If compliance matters, ensure that the firewall drops packets with
+non-compliant routing headers, extensions, etc.
+      * ICMPv6 Drop—If compliance matters, ensure that the firewall drops certain packets if the
+packets don’t match a Security policy rule.
 
 ### Network Address Translation
 * NAT policy is evaluated after the destination zone route lookup
