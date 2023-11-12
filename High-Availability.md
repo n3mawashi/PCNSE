@@ -83,8 +83,18 @@
 * HA Heartbeat on the management port
     * Helps to prevent split-brain
     * Happens when a non-redundant control link goes down
-
-### Active/Passive HA Configuration
+* HA Timers Definitions:
+    * Monitor Fail Hold Up Time (ms): Interval during which the firewall will remain active following a path monitor or link monitor failure.          * Preemption Hold Time (min): Time that a passive or active-secondary firewall will wait before taking over as the active or active-primary 
+      firewall.
+    * Heartbeat Interval (ms): Frequency at which the HA peers exchange heartbeat messages in the form of an ICMP (ping).
+    * Promotion Hold Time (ms): Time that the passive firewall (in active/passive mode) or the active-secondary firewall (in active/active mode) 
+      will wait before taking over as the active or active-primary### Active/Passive HA Configuration
+    * Additional Master Hold Up Time (ms): Time interval that is applied to the same event as Monitor Fail Hold Up Time (range 0-60000 ms, default       500 ms). The additional time interval is applied only to the active firewall in active/passive mode and to the active-primary firewall in          active/active mode.
+    * Hello Interval (ms): Interval in milliseconds between hello packets that are sent to verify that the HA functionality on the other firewall 
+      is operational.
+    * Maximum No. of Flaps: A flap is counted when one of the following occurs:
+      A preemption-enabled firewall leaves the active state within 20 minutes after becoming active.
+      A link or path fails to stay up for 10 minutes after becoming functional.
 * Prepare In-band Interface
     * Set interface type as HA
 * Configured under Device > High Availability
