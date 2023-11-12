@@ -1,6 +1,6 @@
 # PCNSE Study Guide Notes
 
-Based on https://www.reddit.com/r/paloaltonetworks/comments/9bxun8/pncse_study_guide_notes/
+
 
 ## EDU 110: PAN 11.0 - Configuration and Administration
 1.  [Platforms and Architecture](Platforms-and-Architecture.md)
