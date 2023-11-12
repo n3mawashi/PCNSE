@@ -145,9 +145,9 @@
       sessions.
     * Active-Secondary: See Active-Primary
     * Tenative: State of a firewall (in an active/active configuration) caused by one of the following:
-      * Failure of a firewall. 
-      * Failure of a monitored object (a link or path).
-      * The firewall leaves suspended or non-functional state.* States of the individual members can be added as a widget on the  Dashboard
+         * Failure of a firewall. 
+         * Failure of a monitored object (a link or path).
+         * The firewall leaves suspended or non-functional state.* States of the individual members can be added as a widget on the  Dashboard
     * Suspended: administratively disabled
     * Non-functional: FW is non-functional and will need to have the issues resolved before it can return to service
       
