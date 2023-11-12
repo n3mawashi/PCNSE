@@ -19,7 +19,7 @@
 ### Other items available
 * Panorama: Centralized management of all PAN firewall points
 * Prisma SaaS (Aperture): protection for cloud-based systems like box, sales force, etc. helps manage permissions and file scans. Focused on DLP, PCI, and other personally exploitable data.
-* Prisma Public Cloud = RedLock
+* Prisma Public Cloud
 * AutoFocus: Hosted security service, provides aggregate info on threat intel from multiple sources
 * MineMeld: Aggregate data from multiple external threat intel sources (public and private)
 * GlobalProtect: VPN that puts traffic back through the firewall to ensure traffic scanning, traffic visibility and security.
