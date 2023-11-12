@@ -77,6 +77,13 @@ activity, you can block ICMP Ping ID 0.
 non-compliant routing headers, extensions, etc.
       * ICMPv6 Drop—If compliance matters, ensure that the firewall drops certain packets if the
 packets don’t match a Security policy rule.
+* Protocol Protection 
+  * In a Zone Protection profile, Protocol Protection defends against non-IP protocol-based attacks.
+Enable Protocol Protection to block or allow non-IP protocols between security zones on a Layer 2
+VLAN or on a virtual wire, or between interfaces within a single zone on a Layer 2 VLAN (Layer 3
+interfaces and zones drop non-IP protocols so non-IP Protocol Protection doesn’t apply). Configure
+Protocol Protection to reduce security risks and facilitate regulatory compliance by preventing less
+secure protocols from entering a zone, or an interface in a zone.
 
 ### Network Address Translation
 * NAT policy is evaluated after the destination zone route lookup
