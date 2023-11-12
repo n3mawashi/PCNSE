@@ -51,10 +51,10 @@ reconnaissance is when attackers attempt to gain information about your networkâ
 by secretly probing the network to find weaknesses. Reconnaissance activities are often preludes to
 a network attack. Enable Reconnaissance Protection on all zones to defend against port scans and
 host sweeps:
-*Port scans discover open ports on a network. A port scanning tool sends client requests to a
+   * Port scans discover open ports on a network. A port scanning tool sends client requests to a
 range of port numbers on a host, with the goal of locating an active port to exploit in an
 attack. Zone Protection profiles defend against TCP and UDP port scans.
-* Host sweeps examine multiple hosts to determine if a specific port is open and vulnerable
+   * Host sweeps examine multiple hosts to determine if a specific port is open and vulnerable
 
 ### Network Address Translation
 * NAT policy is evaluated after the destination zone route lookup
