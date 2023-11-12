@@ -138,11 +138,23 @@
     * Passive: normal traffic is discarded, may process LLDP and LACP traffic
     * Suspended: administratively disabled
     * Non-functional: FW is non-functional and will need to have the issues resolved before it can return to service
-* States of the individual members can be added as a widget on the Dashboard
+* States an A/A FW can be in are:
+    * Initial: Transient state when it joins an HA pair
+    * Active-Primary: In an active/active configuration, state of the firewall that connects to User-ID agents, runs DHCP server and DHCP relay,         and matches NAT and PBF rules with the Device ID of the active-primary firewall. A firewall in this state can own sessions and set up 
+      sessions.
+    * Active-Secondary: See Active-Primary
+    * Tenative: State of a firewall (in an active/active configuration) caused by one of the following:
+                * Failure of a firewall. 
+                * Failure of a monitored object (a link or path).
+                * The firewall leaves suspended or non-functional state.* States of the individual members can be added as a widget on the 
+                  Dashboard
+    * Suspended: administratively disabled
+    * Non-functional: FW is non-functional and will need to have the issues resolved before it can return to service
+      
     * Add under Dashboard > Widgets > System > High Availability
     * This will show at a glance the status
         * Green: Good
         * Yellow: Warning (normal state for a standby firewall in an A/P pair)
         * Red: Error to be resolved
         * When an HA Pair is initially formed, a manual sync will need to be done. This screen can initiate a 'sync to peer' push.
-    * System Log will show the events in an HA Pair negotiation
+        * System Log will show the events in an HA Pair negotiation
