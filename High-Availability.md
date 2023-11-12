@@ -138,6 +138,7 @@
     * Passive: normal traffic is discarded, may process LLDP and LACP traffic
     * Suspended: administratively disabled
     * Non-functional: FW is non-functional and will need to have the issues resolved before it can return to service
+      
 * States an A/A FW can be in are:
     * Initial: Transient state when it joins an HA pair
     * Active-Primary: In an active/active configuration, state of the firewall that connects to User-ID agents, runs DHCP server and DHCP relay,         and matches NAT and PBF rules with the Device ID of the active-primary firewall. A firewall in this state can own sessions and set up 
