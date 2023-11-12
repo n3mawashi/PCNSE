@@ -34,7 +34,8 @@
 * Tags are used to help organize and 'tag' rules that are in related policy groups. examples are: mail, web, DC, SQL, etc
 * Custom Services can be created to help provide simplification and identity to services. In services, you can specify a single port, multiple ports with commas, or a range of ports with a dash.
 * For the pre-defined intra/interzone allow/deny rules, choose override to set logging or other profile settings such as av/mal/vuln profiles.
-
+### DoS Protection Profiles
+  
 ### Network Address Translation
 * NAT policy is evaluated after the destination zone route lookup
 * NAT policy is applied just before packet is forwarded.
