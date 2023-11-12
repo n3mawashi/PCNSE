@@ -35,7 +35,27 @@
 * Custom Services can be created to help provide simplification and identity to services. In services, you can specify a single port, multiple ports with commas, or a range of ports with a dash.
 * For the pre-defined intra/interzone allow/deny rules, choose override to set logging or other profile settings such as av/mal/vuln profiles.
 ### DoS Protection Profiles
-  
+* Flood protection: Detects and prevents attacks in which the network is flooded with
+packets, which results in too many half-open sessions or services being unable to respond to
+each request. In this case, the source address of the attack is usually spoofed.
+* Resource protection: Detects and prevents session exhaustion attacks. In this type of
+attack, many hosts (bots) are used to establish as many fully established sessions as possible
+for consuming all of a system’s resources.
+### Zone Protection
+* A Zone Protection profile with flood protection configured defends an entire ingress zone against
+SYN, ICMP, ICMPv6, UDP, and other IP flood attacks. The firewall measures the aggregate amount
+of each flood type entering the zone in new connections per second (CPS) and compares the totals
+to the thresholds you configure in the Zone Protection profile.
+* Reconnaissance Protection: Similar to the military definition of reconnaissance, the network security definition of
+reconnaissance is when attackers attempt to gain information about your network’s vulnerabilities
+by secretly probing the network to find weaknesses. Reconnaissance activities are often preludes to
+a network attack. Enable Reconnaissance Protection on all zones to defend against port scans and
+host sweeps:
+*Port scans discover open ports on a network. A port scanning tool sends client requests to a
+range of port numbers on a host, with the goal of locating an active port to exploit in an
+attack. Zone Protection profiles defend against TCP and UDP port scans.
+* Host sweeps examine multiple hosts to determine if a specific port is open and vulnerable
+
 ### Network Address Translation
 * NAT policy is evaluated after the destination zone route lookup
 * NAT policy is applied just before packet is forwarded.
