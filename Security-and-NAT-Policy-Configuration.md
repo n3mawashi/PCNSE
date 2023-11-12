@@ -41,6 +41,23 @@ each request. In this case, the source address of the attack is usually spoofed.
 * Resource protection: Detects and prevents session exhaustion attacks. In this type of
 attack, many hosts (bots) are used to establish as many fully established sessions as possible
 for consuming all of a system’s resources.
+* You can configure aggregate and classified DoS Protection Profiles and apply one profile or one of
+each type of profile to DoS Protection Policy Rules when you configure DoS Protection.
+     * Aggregate — Sets thresholds that apply to the entire group of devices specified in a DoS
+Protection policy rule instead of to each individual device, so one device could receive the
+majority of the allowed connection traffic. For example, a Max Rate of 20,000 CPS means the
+total CPS for the group is 20,000 and an individual device can receive up to 20,000 CPS if the
+other devices don’t have connections. Aggregate DoS Protection policies provide another
+layer of broad protection (after the dedicated DDoS device at the Internet perimeter and
+Zone Protection profiles) for a particular group of critical devices when you want to apply
+extra constraints on specific subnets, users, or services.
+      * Classified — Sets flood thresholds that apply to each individual device specified in a DoS
+Protection policy rule. For example, if you set a Max Rate of 5,000 CPS, each device specified
+in the rule can accept up to 5,000 CPS before it drops new connections. If you apply a
+classified DoS Protection policy rule to more than one device, the devices governed by the
+rule should be similar in terms of capacity and how you want to control their CPS rates
+because classified thresholds apply to each individual device. Classified profiles protect
+individual critical resources.
 ### Zone Protection
 * A Zone Protection profile with flood protection configured defends an entire ingress zone against
 SYN, ICMP, ICMPv6, UDP, and other IP flood attacks. The firewall measures the aggregate amount
@@ -84,7 +101,8 @@ VLAN or on a virtual wire, or between interfaces within a single zone on a Layer
 interfaces and zones drop non-IP protocols so non-IP Protocol Protection doesn’t apply). Configure
 Protocol Protection to reduce security risks and facilitate regulatory compliance by preventing less
 secure protocols from entering a zone, or an interface in a zone.
-
+* Ethernet SGT Protection - Cisco TrustSec network
+  
 ### Network Address Translation
 * NAT policy is evaluated after the destination zone route lookup
 * NAT policy is applied just before packet is forwarded.
