@@ -3,23 +3,28 @@
 
 
 ## EDU 110: PAN 11.0 - Configuration and Administration
+Domain 1: Core Concepts 
 1.  [Platforms and Architecture](Platforms-and-Architecture.md)
-2.  [Initial Configuration](Initial-Configuration.md)
-3.  [Interface Configuration](Interface-Configuration.md)
-4.  [Security and NAT Policy Configuration](Security-and-NAT-Policy-Configuration.md)
-5.  [App-ID](App-ID.md)
-6.  [Content-ID](Content-ID.md)
-7.  [URL Filtering](URL-Filtering.md)
-8.  [Decryption](Decryption.md)
-9.  [Wildfire](Wildfire.md)
-10. [User-ID](User-ID.md)
-11. [Global Protect](Global-Protect.md)
-12. [Site to Site VPN's](Site-to-Site-VPNs.md)
-13. [Monitoring and Reporting](Monitoring-and-Reporting.md)
-14. [High Availability](High-Availability.md)
-15. [Security Best Practices](Security-Best-Practices.md)
+2.  [Security Best Practices](Security-Best-Practices.md)
+3.  [Initial Configuration](Initial-Configuration.md)
 
-## EDU 120: PAN 11.0 - Managing Firewalls at Scale (Panorama)
+4.  
+5.  [Interface Configuration](Interface-Configuration.md)
+6.  [Security and NAT Policy Configuration](Security-and-NAT-Policy-Configuration.md)
+7.  [App-ID](App-ID.md)
+8.  [Content-ID](Content-ID.md)
+9.  [URL Filtering](URL-Filtering.md)
+10.  [Decryption](Decryption.md)
+11.  [Wildfire](Wildfire.md)
+12. [User-ID](User-ID.md)
+13. [Global Protect](Global-Protect.md)
+14. [Site to Site VPN's](Site-to-Site-VPNs.md)
+15. [Monitoring and Reporting](Monitoring-and-Reporting.md)
+16. [High Availability](High-Availability.md)
+17. 
+
+Domain 4: Deploy and Configure Firewalls Using Panorama
+
 1.  [Panorama Overview](Panorama-Overview.md)
 2.  [Initial Configuration](Panorama-Initial-Configuration.md)
 3.  [Adding Firewalls to Panorama](Adding-Firewalls-to-Panorama.md)
