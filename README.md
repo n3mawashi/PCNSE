@@ -19,7 +19,7 @@ Domain 1: Core Concepts
 15. [High Availability](High-Availability.md) 
 
 Domain 2:
-7. [Dynamic Route](Dynamic-Routing.md)
+7. [Dynamic Routing](Dynamic-Routing.md)
 
 Domain 4: Deploy and Configure Firewalls Using Panorama
 1.  [Panorama Overview](Panorama-Overview.md)
