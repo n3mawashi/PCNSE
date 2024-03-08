@@ -14,14 +14,15 @@
     * Prevents known and unknown exploits
     * Integrates with cloud to prevent known and unknown malware
 * Cloud Security: VM-series firewall
-* Cortex : Prevention, detection and response platform that runs on fully integrated endpoint, network and cloud data
+* Cortex
+*    Prevention, detection and response platform that runs on fully integrated endpoint, network and cloud data
    * Intergrates with Prisma Access, firewalls, panorama, XDR and trap management service   
 * Cortex Data Lake: Use data lake architect with Cortex XDR to create event and vulnerability correlation.
 
 ### Other items available
 * Panorama: Centralized management of all PAN firewall points
 * Prisma: Cloud Security
-   * SaSE SD-WAN with secuire web proxy/gateway, access brokers, DNS and firewall-as-a-service
+   * SaSE SD-WAN with secure web proxy/gateway, access brokers, DNS and firewall-as-a-service
    * SaaS (Aperture): protection for cloud-based systems like box, sales force, etc. helps manage permissions and file scans. Focused on DLP, PCI, and other personally exploitable data.
 * Prisma Public Cloud: Cloud Security Posture Management. Taps into cloud provider API for read-only access to networ traffic, user-activity and configuration. Agents for host, container and serverless environments. Supported providers are:
    * Alibaba Cloud
