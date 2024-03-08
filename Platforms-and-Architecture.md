@@ -15,7 +15,7 @@
     * Integrates with cloud to prevent known and unknown malware
 * Cloud Security: VM-series firewall
 * Cortex
-*    Prevention, detection and response platform that runs on fully integrated endpoint, network and cloud data
+   * Prevention, detection and response platform that runs on fully integrated endpoint, network and cloud data
    * Intergrates with Prisma Access, firewalls, panorama, XDR and trap management service   
 * Cortex Data Lake: Use data lake architect with Cortex XDR to create event and vulnerability correlation.
 
