@@ -21,20 +21,21 @@
 
 ### Other items available
 * Panorama: Centralized management of all PAN firewall points
-* Prisma: Cloud Security
+* Prisma
+   * Umbrella for all Cloud Security technology
    * SaSE SD-WAN with secure web proxy/gateway, access brokers, DNS and firewall-as-a-service
    * SaaS (Aperture): protection for cloud-based systems like box, sales force, etc. helps manage permissions and file scans. Focused on DLP, PCI, and other personally exploitable data.
-* Prisma Public Cloud: Cloud Security Posture Management. Taps into cloud provider API for read-only access to networ traffic, user-activity and configuration. Agents for host, container and serverless environments. Supported providers are:
-   * Alibaba Cloud
-   * Amazon Web Services
-   * Docker EE
-   * Google CloudPlatform
-   * IBM Cloud
-   * Kubernetes
-   * Microsoft Azure
-   * Rancher
-   * Red Hat OpenShift
-   * VMware Tanzu
+   * Public Cloud: Cloud Security Posture Management. Taps into cloud provider API for read-only access to networ traffic, user-activity and configuration. Agents for host, container and serverless environments. Supported providers are:
+      * Alibaba Cloud
+      * Amazon Web Services
+      * Docker EE
+      * Google CloudPlatform
+      * IBM Cloud
+      * Kubernetes
+      * Microsoft Azure
+      * Rancher
+      * Red Hat OpenShift
+      * VMware Tanzu
 
 * AutoFocus: Hosted security service, provides aggregate info on threat intel from multiple sources
 * MineMeld: Aggregate data from multiple external threat intel sources (public and private)
